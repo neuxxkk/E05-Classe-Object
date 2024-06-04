@@ -23,6 +23,12 @@ public class PessoaFisica extends Cliente {
         "\n====================";
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        PessoaFisica pessoa = (PessoaFisica) obj;
+        return this.cpf==pessoa.cpf;
+    }
+
     /*public boolean verificadorCpf() {
         boolean cpfValido = true;
         

@@ -71,6 +71,11 @@ public class Conta {
         "\n====================";
     }
 
+    @Override
+    public boolean equals(Object conta) {
+        return this.numero==((Conta) conta).numero; //converte Object conta to Conta conta
+    }
+
     public void imprimirExtrato() {
         System.out.println("\n======= Extrato Conta " + this.numero + "======");
         for(Operacao atual : this.operacoes) {

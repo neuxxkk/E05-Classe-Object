@@ -25,4 +25,9 @@ public class PessoaJuridica extends Cliente {
         "\n====================";
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        return this.cnpj == ((PessoaJuridica) obj).cnpj ; //converte Object obj to PessoaJuridica obj
+    }
+
 }
